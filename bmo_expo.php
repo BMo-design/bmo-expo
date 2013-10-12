@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: BMo Expo - a  Wordpress and NextGEN Gallery Exhibition Plugin 
+Plugin Name: BMo Expo - a  Wordpress and NextGEN Gallery exhibition plugin 
 Plugin URI: http://software.bmo-design.de/bmoExpo/wordpress-plugin-bmo-exhibition.html
 Description: BMo Expo is one of the best gallery and exhibition plugins for wordpress. It allows you to replace the default wordpress gallery and NextGen Gallerys with impressive gallery designs. The plugin is easy to use and configure. Slideshow, vertical scroll, lightbox and more could be used. Perfect vor photographers, artists or exhibitor. Try it out or watch the demo video.
 Author: Benedikt Morschheuser
