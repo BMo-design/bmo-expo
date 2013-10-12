@@ -1,0 +1,12 @@
+/*
+CSS Name: BMo Admin Style
+Author: Benedikt Morschheuser
+Version: 1.0
+*/
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+	background: linear-gradient(to top, #F5F5F5, #F9F9F9) repeat scroll 0 0 #F5F5F5;
+}
+.form-table th {
+	width:45%;
+	min-width:200px;
+}
