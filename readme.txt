@@ -6,7 +6,7 @@ Requires at least: 3.1
 Tested up to: 3.6.1
 Stable tag: trunk
 
-Pro version of the awesome JavaScript gallery. BMo-Design's Mootools Javascript ScrollGallery as a Plugin for the Wordpress NextGEN Gallery.
+BMo Expo is one of the best gallery and exhibition plugins for wordpress. It allows you to replace the default wordpress gallery and NextGen Gallerys with impressive gallery designs. The plugin is easy to use and configure. Slideshow, vertical scroll, lightbox and more could be used. Perfect vor photographers, artists or exhibitor. Try it out or watch the demo video.
 
 == Description ==
 
@@ -16,7 +16,7 @@ The plugin is an evolution of the successful Nextgen Scroll Gallery plugins.
 
 You can use it as stand alone gallery viewer for your default wordpress galleries or as extension the very cool Wordpress gallery manager: [NextGen Gallery](http://wordpress.org/extend/plugins/nextgen-gallery/). 
 
-http://youtu.be/MJBv_OXzJ_A
+www.youtube.com/watch?v=MJBv_OXzJ_A
 
 After the installation, you will find an admin interface, with which you can adjust the plugin settings.
 This gallery do not use flash, so no extra browser plugin is required and search engines can crawl your content easily.
@@ -44,7 +44,7 @@ The options can be overridden in the post/page tag. For example: [gallery ids="1
 
 That's it ... Have fun!
 
-http://youtu.be/MJBv_OXzJ_A
+www.youtube.com/watch?v=MJBv_OXzJ_A
 
 = Use the Plugin together with the NextGen Gallery =
 
@@ -54,7 +54,7 @@ Just click the "BMoExpo" editor button and select one of your NextGen Galleries.
 
 That's it ... Have fun!
 
-http://youtu.be/ORAfzykvEIY
+www.youtube.com/watch?v=ORAfzykvEIY
 
 
 == Frequently Asked Questions ==
