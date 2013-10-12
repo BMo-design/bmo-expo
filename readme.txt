@@ -16,7 +16,7 @@ The plugin is an evolution of the successful Nextgen Scroll Gallery plugins.
 
 You can use it as stand alone gallery viewer for your default wordpress galleries or as extension the very cool Wordpress gallery manager: [NextGen Gallery](http://wordpress.org/extend/plugins/nextgen-gallery/). 
 
-http://www.youtube-nocookie.com/embed/MJBv_OXzJ_A
+http://youtu.be/MJBv_OXzJ_A
 
 After the installation, you will find an admin interface, with which you can adjust the plugin settings.
 This gallery do not use flash, so no extra browser plugin is required and search engines can crawl your content easily.
@@ -36,8 +36,6 @@ Tested with Safari 6, FF 24, IE 9.
 
 Download, upload & activate this plugin 
 
-=== Usage ===
-
 = Use the Plugin with the default WP Gallery =
 
 The plugin will automatically replace the default wordpress gallery shortcode [gallery]. You can change the visualisation by changing the global options at the options page.
@@ -46,7 +44,7 @@ The options can be overridden in the post/page tag. For example: [gallery ids="1
 
 That's it ... Have fun!
 
-http://www.youtube-nocookie.com/embed/MJBv_OXzJ_A
+http://youtu.be/MJBv_OXzJ_A
 
 = Use the Plugin together with the NextGen Gallery =
 
@@ -56,7 +54,7 @@ Just click the "BMoExpo" editor button and select one of your NextGen Galleries.
 
 That's it ... Have fun!
 
-http://www.youtube-nocookie.com/embed/ORAfzykvEIY"
+http://youtu.be/ORAfzykvEIY
 
 
 == Frequently Asked Questions ==
