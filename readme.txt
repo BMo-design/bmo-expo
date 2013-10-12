@@ -6,7 +6,7 @@ Requires at least: 3.1
 Tested up to: 3.6.1
 Stable tag: trunk
 
-BMo Exposition is a gallery and exhibition plugins for wordpress. It allows you to replace default wordpress galleries and NextGen galleries.
+BMo Exposition is a gallery and exhibition plugins for wordpress. It allows you to replace default wordpress galleries and NextGen galleries with beautiful Javascript galleries.
 
 == Description ==
 
