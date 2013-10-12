@@ -16,7 +16,8 @@ The plugin is an evolution of the successful Nextgen Scroll Gallery plugins.
 
 You can use it as stand alone gallery viewer for your default wordpress galleries or as extension the very cool Wordpress gallery manager: [NextGen Gallery](http://wordpress.org/extend/plugins/nextgen-gallery/). 
 
-www.youtube.com/watch?v=MJBv_OXzJ_A
+[youtube http://www.youtube.com/watch?v=MJBv_OXzJ_A]
+
 
 After the installation, you will find an admin interface, with which you can adjust the plugin settings.
 This gallery do not use flash, so no extra browser plugin is required and search engines can crawl your content easily.
@@ -44,7 +45,7 @@ The options can be overridden in the post/page tag. For example: [gallery ids="1
 
 That's it ... Have fun!
 
-www.youtube.com/watch?v=MJBv_OXzJ_A
+[youtube http://www.youtube.com/watch?v=MJBv_OXzJ_A]
 
 = Use the Plugin together with the NextGen Gallery =
 
@@ -54,7 +55,7 @@ Just click the "BMoExpo" editor button and select one of your NextGen Galleries.
 
 That's it ... Have fun!
 
-www.youtube.com/watch?v=ORAfzykvEIY
+[youtube http://www.youtube.com/watch?v=ORAfzykvEIY]
 
 
 == Frequently Asked Questions ==
