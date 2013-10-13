@@ -35,7 +35,7 @@ Tested with Safari 6, FF 24, IE 9.
 
 == Installation ==
 
-Download, upload & activate this plugin 
+1. download, upload & activate this plugin 
 
 = Use the Plugin with the default WP Gallery =
 
