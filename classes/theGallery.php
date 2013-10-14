@@ -46,6 +46,7 @@ class bmoExpo {
             'thumbs_height'   =>  array('type' => 'common','valtype' => 'int', 'default' =>100, 'desc' => 'thumbs_height (number): height of each thumb'),
             
 			'sG_design'      =>  array('type' => 'sG','valtype' => 'string', 'default' =>'default_sG.css', 'desc' => 'Scroll Gallery Design'),
+			'sG_caption'      	=>  array('type' => 'sG','valtype' => 'bool', 'default' =>true, 'desc' => 'sG_caption (boolean): show the caption'),
             'sG_start'           =>  array('type' => 'sG','valtype' => 'int', 'default' =>1, 'desc' => 'sG_start (number): start at picture number ... the first picture is number 1'),
             'sG_thumbPosition'   =>  array('type' => 'sG','valtype' => 'select', 'default' =>'top', 'possibilities' => array('top', 'right', 'bottom', 'left', 'none'), 'desc' => 'sG_thumbPosition (string)[top, right, bottom, left, none]: position of the thumbs'),
             'sG_images'          =>  array('type' => 'sG','valtype' => 'bool', 'default' =>true, 'desc' => 'sG_images (boolean): show the images'),
@@ -63,6 +64,7 @@ class bmoExpo {
 			'sG_responsive' 	 =>  array('type' => 'sG','valtype' => 'bool', 'default' =>true, 'desc' => 'sG_responsive (boolean): makes the width responsive and the gallery width relative to parent elements width'),
 			
 			'slG_design'    =>  array('type' => 'slG','valtype' => 'string', 'default' =>'default_slG.css', 'desc' => 'Scroll Lightbox Gallery'),
+			'slG_caption'      	=>  array('type' => 'slG','valtype' => 'bool', 'default' =>true, 'desc' => 'slG_caption (boolean): show the caption'),
 			'slG_vertical' 	 	 =>  array('type' => 'slG','valtype' => 'bool', 'default' =>false, 'desc' => 'slG_vertical (boolean): show thumbs vertical or horizontal'),
 			'slG_loopThumbs' 	 =>  array('type' => 'slG','valtype' => 'bool', 'default' =>true, 'desc' => 'slG_loopThumbs (boolean): scroll back to the first thumbnail after the last'),
 			'slG_opacity'        =>  array('type' => 'slG','valtype' => 'int', 'default' =>40, 'desc' => 'slG_opacity (number): transparency of the thumbs'),

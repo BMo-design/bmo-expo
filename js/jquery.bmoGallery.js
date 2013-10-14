@@ -22,6 +22,7 @@
 			  
 			  /*options für scrollgallery*/
 			  sG_start:				1,					//erstes Bild, startet bei 1
+			  sG_caption:			1,					//show captions
 			  sG_thumbPosition:		'left',				//top, bottom, none, left, right
 			  sG_images:			true,				//show images?
 			  sG_loop:				true,				//beim letzten Bild wieder nach vorne springen?
@@ -37,6 +38,7 @@
 			  sG_responsive:		true,				//make width responsive. Gallery width is relative to parent elements width
 			  
 			  /*options für scrollLightboxGallery*/
+			  slG_caption:			1,					//show captions
 			  slG_vertical:			false,
 			  slG_loopThumbs:		true,				//beim letzten Thumb wieder nach vorne springen?
 			  slG_opacity:			40,					//opacity of thumbs

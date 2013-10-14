@@ -5,7 +5,7 @@ Plugin URI: http://software.bmo-design.de/bmoExpo/wordpress-plugin-bmo-exhibitio
 Description: BMo Expo is one of the best gallery and exhibition plugins for wordpress. It allows you to replace the default wordpress gallery and NextGen Gallerys with impressive gallery designs. The plugin is easy to use and configure. Slideshow, vertical scroll, lightbox and more could be used. Perfect vor photographers, artists or exhibitor. Try it out or watch the demo video.
 Author: Benedikt Morschheuser
 Author URI: http://bmo-design.de/
-Version: 1.0.0
+Version: 1.0.1
 
 Copyright 2012-2013 by Benedikt Morschheuser (http://bmo-design.de/kontakt/)
 
@@ -32,7 +32,7 @@ http://wordpress.org/about/gpl/
 
 //###############################################################
 
-  define('BMO_EXPO_VERSION','1.0.0');//version  
+  define('BMO_EXPO_VERSION','1.0.1');//version  
   define('BMO_EXPO_SITEBASE_URL', get_option('siteurl'));
   define('BMO_EXPO_PLUGINNAME', trim(plugin_basename(dirname(__FILE__))));
   define('BMO_EXPO_URL', get_option('siteurl').'/wp-content/plugins/' . dirname(plugin_basename(__FILE__))); // get_bloginfo('wpurl')

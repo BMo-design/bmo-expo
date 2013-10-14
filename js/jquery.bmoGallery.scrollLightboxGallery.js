@@ -62,9 +62,11 @@ var BMo_scrollLightboxGallery; //global declaraiton
 			  }
 			  
 			  var that = this;
+			  var slG_caption = this.gallery.options.slG_caption;
 			  this.$bmo_the_gallery_thumbs.find('.bmo_the_gallery_image').each(function(index){
 				  $(this).find('a').attr('rel',that.gallery.options.slG_relType.replace(/{id}/, that.gallery.$gallery_obj.attr('id')));//set rel attribut
-				  $(this).find('a').attr('title',$(this).find('div.bmo_the_gallery_caption').html());//set title
+				  if(slG_caption==true)
+				  	$(this).find('a').attr('title',$(this).find('div.bmo_the_gallery_caption').html());//set title
 				  $(this).data('index',index);//set index data
 			  });
 			  

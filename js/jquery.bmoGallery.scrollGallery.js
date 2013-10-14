@@ -71,6 +71,7 @@ var BMo_scrollGallery; //global declaraiton
 				var $bmo_the_gallery_images = this.$bmo_the_gallery_images = $('<div/>', {
 					class: 'bmo_the_gallery_images'
 				}).appendTo(this.$bmo_the_gallery_image_area);
+				var sG_caption=this.gallery.options.sG_caption;
 				this.$bmo_the_gallery_thumbs.find('.bmo_the_gallery_image').each(function(index){
 					var $bmo_the_gallery_image = $('<div/>', {
 						class: 'bmo_the_gallery_image'
@@ -80,7 +81,7 @@ var BMo_scrollGallery; //global declaraiton
 						alt: $(this).find('img').attr('alt'),
 						title: $(this).find('img').attr('title')
 					}).appendTo($bmo_the_gallery_image);
-					if($(this).find('div.bmo_the_gallery_caption').html()!=""){
+					if($(this).find('div.bmo_the_gallery_caption').html()!=""&&sG_caption==true){
 						var $caption = $('<div/>', {
 							class: 'bmo_the_gallery_caption'
 						}).appendTo($bmo_the_gallery_image);
