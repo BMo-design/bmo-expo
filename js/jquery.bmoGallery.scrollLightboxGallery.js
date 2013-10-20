@@ -307,8 +307,10 @@ var BMo_scrollLightboxGallery; //global declaraiton
 			});
 			if(this.isVertical){
 				this.$bmo_the_gallery_thumbs.css('height',(thumb_height_withBMP * numOfThumbs)+'px');
+				this.$bmo_the_gallery_thumbs.css('width', thumb_width + 'px');
 			}else{
 				this.$bmo_the_gallery_thumbs.css('width',(thumb_width_withBMP * numOfThumbs)+'px');
+				this.$bmo_the_gallery_thumbs.css('height',thumb_height +'px');
 			}
 		}, 
 		

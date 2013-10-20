@@ -474,10 +474,14 @@ var BMo_scrollGallery; //global declaraiton
 			});
 			if(this.isVertical){
 				this.$bmo_the_gallery_thumbs.css('height',(thumb_height_withBMP * numOfThumbs)+'px');
+				this.$bmo_the_gallery_thumbs.css('width', thumb_width + 'px');
 			}else{
 				this.$bmo_the_gallery_thumbs.css('width',(thumb_width_withBMP * numOfThumbs)+'px');
+				this.$bmo_the_gallery_thumbs.css('height',thumb_height +'px');
 			}
-			
+			if(this.isVertical){
+				gallery_width = this.$gallery_obj.width()-this.$bmo_the_gallery_thumb_area.outerWidth(true)-1;//falls die größe der thumbs geändert wurde, muss das 
+			}
 			if(this.gallery.options.sG_images){
 				var image_width_withBMP = gallery_width;
 				this.$bmo_the_gallery_image_area.css('width',gallery_width+'px').css('height',gallery_height+'px');

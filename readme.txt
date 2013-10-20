@@ -74,7 +74,8 @@ Not compatible with IE 7,6,5...
 
 == Changelog ==
 
-
 = Version 1.0 =
+    * 1.0.2 Thumb size fix, thanks to grifmo
+    * 1.0.1 Add option to show/hide the caption 
     * First release
 	* BMo Expo Version 1.0 - a new version of the BMo Nextgen Scroll Gallery 
