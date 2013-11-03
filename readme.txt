@@ -60,6 +60,11 @@ That's it ... Have fun!
 
 == Frequently Asked Questions ==
 
+= How to add a custom theme =
+
+ * Build your custom css theme is easy. Just create a folder with the name “bmo-expo-themes” in “wp-content”. Create a second folder “scrollGallery” and a third folder “scrollLightboxGallery” hierin. In these folders you can save your own css themes. Every theme need a “CSS Name:”, a “Description:” an “Author:“ and a “Version:“. A good template provides the “classicBlackDesign_sG.css” in bmo-expo/css/themes/scrollGallery/classicBlackDesign_sG.css.
+
+
 = Have a question? =
 
  * Ask the forum: [forum](http://wordpress.org/tags/bmo-expo/).
@@ -75,6 +80,7 @@ Not compatible with IE 7,6,5...
 == Changelog ==
 
 = Version 1.0 =
+    * 1.0.3 No Borders Scroll Gallery Design, Possibility to add custom themes in the folder wp-content/bmo-expo-themes/[gallerytype]/ 
     * 1.0.2 Thumb size fix, thanks to grifmo
     * 1.0.1 Add option to show/hide the caption 
     * First release
