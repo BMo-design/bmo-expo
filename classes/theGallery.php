@@ -45,7 +45,7 @@ class bmoExpo {
             'thumbs_width'    =>  array('type' => 'common','valtype' => 'int', 'default' =>100, 'desc' => 'thumbs_width (number): width of each thumb'),
             'thumbs_height'   =>  array('type' => 'common','valtype' => 'int', 'default' =>100, 'desc' => 'thumbs_height (number): height of each thumb'),
             
-			'sG_design'      =>  array('type' => 'sG','valtype' => 'string', 'default' =>'default_sG.css', 'desc' => 'Scroll Gallery Design'),
+			'sG_design'      =>  array('type' => 'sG','valtype' => 'string', 'default' =>BMO_EXPO_URL.'/css/themes/scrollGallery/default_sG.css', 'desc' => 'Scroll Gallery Design'),
 			'sG_caption'      	=>  array('type' => 'sG','valtype' => 'bool', 'default' =>true, 'desc' => 'sG_caption (boolean): show the caption'),
             'sG_start'           =>  array('type' => 'sG','valtype' => 'int', 'default' =>1, 'desc' => 'sG_start (number): start at picture number ... the first picture is number 1'),
             'sG_thumbPosition'   =>  array('type' => 'sG','valtype' => 'select', 'default' =>'top', 'possibilities' => array('top', 'right', 'bottom', 'left', 'none'), 'desc' => 'sG_thumbPosition (string)[top, right, bottom, left, none]: position of the thumbs'),
@@ -63,7 +63,7 @@ class bmoExpo {
 			'sG_followImages' 	 =>  array('type' => 'sG','valtype' => 'bool', 'default' =>true, 'desc' => 'sG_followImages (boolean): if the images are clicked, the thumbs will follow'),
 			'sG_responsive' 	 =>  array('type' => 'sG','valtype' => 'bool', 'default' =>true, 'desc' => 'sG_responsive (boolean): makes the width responsive and the gallery width relative to parent elements width'),
 			
-			'slG_design'    =>  array('type' => 'slG','valtype' => 'string', 'default' =>'default_slG.css', 'desc' => 'Scroll Lightbox Gallery'),
+			'slG_design'    =>  array('type' => 'slG','valtype' => 'string', 'default' =>BMO_EXPO_URL.'/css/themes/scrollLightboxGallery/default_slG.css', 'desc' => 'Scroll Lightbox Gallery'),
 			'slG_caption'      	=>  array('type' => 'slG','valtype' => 'bool', 'default' =>true, 'desc' => 'slG_caption (boolean): show the caption'),
 			'slG_vertical' 	 	 =>  array('type' => 'slG','valtype' => 'bool', 'default' =>false, 'desc' => 'slG_vertical (boolean): show thumbs vertical or horizontal'),
 			'slG_loopThumbs' 	 =>  array('type' => 'slG','valtype' => 'bool', 'default' =>true, 'desc' => 'slG_loopThumbs (boolean): scroll back to the first thumbnail after the last'),
@@ -116,7 +116,7 @@ class bmoExpo {
 		 wp_register_style('cssBMoExpo', BMO_EXPO_URL.'/css/style.css',false, BMO_EXPO_VERSION ,'all');
 	     wp_register_style('cssBMoExpoDesignDefault', BMO_EXPO_URL.'/css/themes/default.css',array('cssBMoExpo'), BMO_EXPO_VERSION ,'all');
 		 foreach($this->galleryTypes as $key => $val){
-			 wp_register_style($key.'_cssBMoExpoDesign', BMO_EXPO_URL.'/css/themes/'.$val.'/'.$options[$key.'_design']['value'],array('cssBMoExpo'), BMO_EXPO_VERSION ,'all');
+			 wp_register_style($key.'_cssBMoExpoDesign', $options[$key.'_design']['value'],array('cssBMoExpo'), BMO_EXPO_VERSION ,'all');
 		  } 
 		
 		

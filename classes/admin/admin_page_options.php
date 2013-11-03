@@ -181,7 +181,11 @@ class bmoExpoAdmin_options_page {
 					 $path_val = '/'.$val;
 				}	    
 			}
-			$csslist = $this->BMo_Expo_get_cssfiles($path_val);
+			$csslist = $this->BMo_Expo_get_cssfiles(BMO_EXPO_BASEPATH.'/css/themes',$path_val,false);//plugin themes
+			if (is_dir(BMO_EXPO_CUSTOM_THEME_BASEPATH)) {
+				$csslist = array_merge($csslist, $this->BMo_Expo_get_cssfiles(BMO_EXPO_CUSTOM_THEME_BASEPATH,$path_val,true)); //themes in wp-content/bmo-expo-themes
+			}
+			
 			echo '<select name="'.BMO_EXPO_OPTIONS.'['.$key.'][value]" onchange="this.form.submit();">';
 					foreach ($csslist as $key =>$a_cssfile) {
 						$css_name = $a_cssfile['Name'];
@@ -256,7 +260,7 @@ class bmoExpoAdmin_options_page {
 		 /**********************************************************/
 		 // ### Code from wordpress plugin 
 		 // read in the css files
-		public  function BMo_Expo_get_cssfiles($path_val) {
+		public  function BMo_Expo_get_cssfiles($path,$path_val,$isCustomTheme=false) {//$isCustomTheme ist wichtig für bau der urls
 
 			/*global $cssfiles; //falls nur einmal eingelesen werden sollte global setzen, sonst wird es immer wieder neu gelesen, wichtig bei veschiedenen ordneren
 
@@ -266,7 +270,7 @@ class bmoExpoAdmin_options_page {
 
 			$cssfiles = array ();
 
-			$plugin_root = BMO_EXPO_BASEPATH.'/css/themes'.$path_val;
+			$plugin_root = $path.$path_val;
 			$plugins_dir = @ dir($plugin_root);
 			
 			if ($plugins_dir) {
@@ -301,7 +305,12 @@ class bmoExpoAdmin_options_page {
 				if ( empty ($plugin_data['Name']) )
 					continue;
 
-				$cssfiles[plugin_basename($plugin_file)] = $plugin_data;
+				//$cssfiles[plugin_basename($plugin_file)] = $plugin_data;
+				if($isCustomTheme){
+					$cssfiles[BMO_EXPO_CUSTOM_THEME_URL.$path_val.'/'.$plugin_file] = $plugin_data;
+				}else{
+					$cssfiles[BMO_EXPO_URL.'/css/themes'.$path_val.'/'.$plugin_file] = $plugin_data;
+				}
 			}
 
 			uasort($cssfiles, create_function('$a, $b', 'return strnatcasecmp($a["Name"], $b["Name"]);'));
