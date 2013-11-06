@@ -145,26 +145,26 @@ class bmoExpoAdmin_options_page {
 				echo "";
 			echo "/> ";
 			if($option['type']!='common_php')
-				echo "<p class='small'>(".$key.")</p>";
+				echo "<p class='small'>".$key." (boolean)</p>";
 		 }
 	 	 public function BMo_Expo_options_field_html_int($args=array()) {
 			$key = $args['key'];
 			$option = $args['option'];
 			echo '<input  name="'.BMO_EXPO_OPTIONS.'['.$key.'][value]" size="4" type="text" value="'.$option['value'].'" />';
 			if($option['type']!='common_php')
-				echo "<p class='small'>(".$key.")</p>";
+				echo "<p class='small'>".$key." (number)</p>";
 	 	 }
 	 	 public function BMo_Expo_options_field_html_string($args=array()) {
 			$key = $args['key'];
 			$option = $args['option'];
 			echo '<input  name="'.BMO_EXPO_OPTIONS.'['.$key.'][value]" size="14" type="text" value="'.$option['value'].'" />';
 			if($option['type']!='common_php')
-				echo "<p class='small'>(".$key.")</p>";
+				echo "<p class='small'>".$key." (string)</p>";
 		 }
 		 public function BMo_Expo_options_field_html_select($args=array()) {
 			$key = $args['key'];
 			$option = $args['option'];
-
+			$_possibilities = "";
 			echo '<select  name="'.BMO_EXPO_OPTIONS.'['.$key.'][value]" >';
 			foreach($option['possibilities'] as $k => $val){
 				if($val==$option["value"]){
@@ -172,10 +172,13 @@ class bmoExpoAdmin_options_page {
 				}else{
 					echo '<option value="'.$val.'">'.$val.'</option>';
 				}
+				$_possibilities .= $val.", ";
 			}
+			if(strlen($_possibilities)>=2)
+				$_possibilities = substr($_possibilities, 0, -2);
 			echo '</select>';
 			if($option['type']!='common_php')
-				echo "<p class='small'>(".$key.")</p>";
+				echo "<p class='small'>".$key." (string)[".$_possibilities."]</p>";
 		 }
 
 		//special fields
