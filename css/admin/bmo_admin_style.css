@@ -10,3 +10,9 @@ Version: 1.0
 	width:45%;
 	min-width:200px;
 }
+p.small{
+	font-size:0.8em;
+	display: inline;
+    padding: 0 0 0 12px;
+	font-weight:normal !important;
+}

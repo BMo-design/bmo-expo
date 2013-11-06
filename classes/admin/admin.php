@@ -129,7 +129,7 @@ class bmoExpoAdmin {
 	 	 echo '<p>This plugin is developed by <br/><a href="http://www.BMo-Design.de" target="_blank">Benedikt Morschheuser</a>.<br/>Any kind of contribution would be highly appreciated. Thank you!</p>
 		 <ul>
 		 	<li>If you like my plugin, please...</li>
-		 	<li><a href="http://wordpress.org/extend/plugins/nextgen-scrollgallery/" target="_blank">rate it at wordpress.org</a> &diams;</li>
+		 	<li><a href="http://wordpress.org/extend/plugins/bmo-expo/" target="_blank">rate it at wordpress.org</a> &diams;</li>
 			<li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4AWSR2J4DK2FU" target="_blank">donate my work</a> &hearts;</li>
 			<li><a href="http://bmo-design.de" target="_blank">set a link to my website</a> &rarr;</li>
 			<li>or give me a <g:plusone size="small"  href="http://software.bmo-design.de/bmoExpo/wordpress-plugin-bmo-exhibition.html"></g:plusone></li>
