@@ -37,13 +37,13 @@ class bmoExpo {
         //set options if not already set with defaults as value- installation
         $options = array(
 			'replaceWPGallery'=>  array('type' => 'common_php','valtype' => 'select', 'default' =>'scrollGallery', 'possibilities' => array('sG' =>  'scrollGallery','slG' => 'scrollLightboxGallery', 0 =>'Do not replace'),'desc' => 'Replace the Wordpress [gallery] shortcode with:'),
-            'jsInFooter'      =>  array('type' => 'common_php','valtype' => 'bool', 'default' =>false, 'desc' => 'Integrate the javascript in the footer and not in the <head/> of your site:'),
+            'jsInFooter'      =>  array('type' => 'common_php','valtype' => 'bool', 'default' =>false, 'desc' => 'Integrate the javascript in the footer and not in the <head/> of your site?'),
 
-            'duration'        =>  array('type' => 'common','valtype' => 'string', 'default' =>'slow', 'desc' => 'Animation duration, durations are given in milliseconds or with the keywords "slow" and "fast"; higher values indicate slower animations:', 'code' => 'duration'),
-            'gallery_width'   =>  array('type' => 'common','valtype' => 'int', 'default' =>600, 'desc' => 'Gallery width:'),
-            'gallery_height'  =>  array('type' => 'common','valtype' => 'int', 'default' =>400, 'desc' => 'Gallery height:'),
-            'thumbs_width'    =>  array('type' => 'common','valtype' => 'int', 'default' =>100, 'desc' => 'Width of each thumb:'),
-            'thumbs_height'   =>  array('type' => 'common','valtype' => 'int', 'default' =>100, 'desc' => 'Height of each thumb:'),
+            'duration'        =>  array('type' => 'common','valtype' => 'string', 'default' =>'slow', 'desc' => 'Animation duration. Durations are given in milliseconds or with the keywords "slow" and "fast"; Higher values indicate slower animations:'),
+            'gallery_width'   =>  array('type' => 'common','valtype' => 'int', 'default' =>600, 'desc' => 'Gallery width (px):'),
+            'gallery_height'  =>  array('type' => 'common','valtype' => 'int', 'default' =>400, 'desc' => 'Gallery height (px):'),
+            'thumbs_width'    =>  array('type' => 'common','valtype' => 'int', 'default' =>100, 'desc' => 'Width of each thumb (px):'),
+            'thumbs_height'   =>  array('type' => 'common','valtype' => 'int', 'default' =>100, 'desc' => 'Height of each thumb (px):'),
             
 			'sG_design'      =>  array('type' => 'sG','valtype' => 'string', 'default' =>BMO_EXPO_URL.'/css/themes/scrollGallery/default_sG.css', 'desc' => 'Scroll Gallery Design:'),
 			'sG_caption'      	=>  array('type' => 'sG','valtype' => 'bool', 'default' =>true, 'desc' => 'Show the caption?'),
@@ -53,12 +53,12 @@ class bmoExpo {
             'sG_loop'            =>  array('type' => 'sG','valtype' => 'bool', 'default' =>true, 'desc' => 'Scroll back to the first image after the last?'),
             'sG_loopThumbs'      =>  array('type' => 'sG','valtype' => 'bool', 'default' =>true, 'desc' => 'Scroll back to the first thumbnail after the last?'),
             'sG_clickable'      =>  array('type' => 'sG','valtype' => 'bool', 'default' =>true, 'desc' => 'Are the images clickable?'),
-            'sG_opacity'         =>  array('type' => 'sG','valtype' => 'int', 'default' =>40, 'desc' => 'Transparency of the thumbs:'),
+            'sG_opacity'         =>  array('type' => 'sG','valtype' => 'int', 'default' =>40, 'desc' => 'Transparency of the thumbs in %:'),
             'sG_area'            =>  array('type' => 'sG','valtype' => 'int', 'default' =>200, 'desc' => 'Width (px) of the area inside the thumbs in which the thumbs are not scrolling if the mouse is inside:'),
             'sG_scrollSpeed'     =>  array('type' => 'sG','valtype' => 'int', 'default' =>2, 'desc' => 'Thumbnail scroll speed, should be >0:'),
             'sG_autoScroll'      =>  array('type' => 'sG','valtype' => 'bool', 'default' =>false, 'desc' => 'Autoscroll the thumbnails?'),
             'sG_aS_stopOnOver'   =>  array('type' => 'sG','valtype' => 'bool', 'default' =>true, 'desc' => 'Stop scrolling on mouse over?'),
-            'sG_diashowDelay'    =>  array('type' => 'sG','valtype' => 'int', 'default' =>0, 'desc' => 'Diashow delay time in seconds; use a number to activate the diashow feature; deactivate diashow with value 0:'),
+            'sG_diashowDelay'    =>  array('type' => 'sG','valtype' => 'int', 'default' =>0, 'desc' => 'Diashow delay time in seconds. Use a number to activate the diashow feature. Deactivate diashow with value 0:'),
 			
 			'sG_followImages' 	 =>  array('type' => 'sG','valtype' => 'bool', 'default' =>true, 'desc' => 'If the images are clicked, the thumbs will follow:'),
 			'sG_responsive' 	 =>  array('type' => 'sG','valtype' => 'bool', 'default' =>true, 'desc' => 'Makes the width responsive and the gallery width relative to parent elements width?'),
@@ -67,7 +67,7 @@ class bmoExpo {
 			'slG_caption'      	=>  array('type' => 'slG','valtype' => 'bool', 'default' =>true, 'desc' => 'Show the caption?'),
 			'slG_vertical' 	 	 =>  array('type' => 'slG','valtype' => 'bool', 'default' =>false, 'desc' => 'Show thumbs vertical or horizontal?'),
 			'slG_loopThumbs' 	 =>  array('type' => 'slG','valtype' => 'bool', 'default' =>true, 'desc' => 'Scroll back to the first thumbnail after the last?'),
-			'slG_opacity'        =>  array('type' => 'slG','valtype' => 'int', 'default' =>40, 'desc' => 'Transparency of the thumbs:'),
+			'slG_opacity'        =>  array('type' => 'slG','valtype' => 'int', 'default' =>40, 'desc' => 'Transparency of the thumbs in %:'),
             'slG_area'    		 =>  array('type' => 'slG','valtype' => 'int', 'default' =>200, 'desc' => 'Width (px) of the area inside the thumbs in which the thumbs are not scrolling if the mouse is inside:'),
 			'slG_scrollSpeed'    =>  array('type' => 'slG','valtype' => 'int', 'default' =>2, 'desc' => 'Thumbnail scroll speed, should be >0:'),
 			'slG_autoScroll' 	 =>  array('type' => 'slG','valtype' => 'bool', 'default' =>false, 'desc' => 'Autoscroll the thumbnails?'),
